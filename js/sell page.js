@@ -6,13 +6,13 @@ $(document).ready(function () {
         $(this).css("cursor", "pointer");
     });
     $("i.fa-exchange-alt").click(function () {
-        $("div.defult").addClass('show');
+        $("div.default").addClass('show');
     });
     $("i.fa-exchange-alt").mouseenter(function () {
         $(this).css("cursor", "pointer");
     });
     $("#remove").click(function () {
-        $("div.defult").remove('.show');
+        $("div.default").remove('.show');
     });
     $("svg.bi-x").click(function () {
         $(this).closest("div.r1").remove()
