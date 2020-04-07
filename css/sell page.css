@@ -1,0 +1,106 @@
+div.container{
+    background-color: #ECF0F1;
+    height: 675px;
+}
+div.col-9 {
+    background-color: #E5E9EA;
+}
+.product {
+    width: 50px;
+    height: 70px;
+}
+div.products {
+    float: right;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 14px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.border {
+    border: 1px solid #FFF!important;
+    border-radius: 50%;
+    margin: 10px;
+}
+.row {
+    margin-right: 0px;
+}
+.a {
+    height: 100px;
+}
+.r1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.po {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+.pos {
+    position: absolute;
+    left: 250px;
+    top: 10px;
+}
+@font-face {
+    font-family: my font;
+    src: url("../font/Bkodak.ttf") format("truetype");
+    src: url("../font/Bkodak.otf") format("opentype");
+}
+.dis {
+    font-family: my font;
+    float: right;
+    padding-left: 135px;
+}
+.ab {
+    position: absolute;
+    top: 40px;
+}
+.under1 {
+    font-family: sans-serif;
+    color: #889298;
+    font-size: small;
+    padding-left: 77px;
+}
+.under2 {
+    font-family: sans-serif;
+    color: #889298;
+    font-size: small;
+    padding-left: 34px;
+}
+div.col-9:hover {
+    background-color: #F1C40F;
+    transition: 0.7s;
+}
+.multi {
+    float: left;
+    font-size: large;
+}
+svg.bi-x {
+    font-size: xx-large;
+    border-radius: 50%;
+}
+svg.bi-x:hover {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #F1C40F;
+    transition: 0.7s;
+}
+div.defult {
+    border: #4B4340;
+    background-color: #4B4340;
+    position: absolute;
+    height: 675px;
+    top: 0px;
+    left: -100px;
+    transition: 0.7s;
+}
+.show {
+    left: 100px!important;
+}
+#remove {
+    color: #F1C40F;
+}
