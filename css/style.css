@@ -1,165 +1,254 @@
 body {
     background-color: #ECF0F1;
 }
-div.container{
-    height: 657px;
-}
-div.col-9 {
+
+/*div.container {*/
+/*    height: 657px;*/
+/*}*/
+
+div.gray-card {
     background-color: #E5E9EA;
+    padding-right: 140px;
 }
+
 .product {
     width: 65px;
     height: 85px;
 }
+
 div.products {
     float: right;
     border: 1px solid white;
     border-radius: 50%;
-    padding: 14px;
     background-color: white;
     margin-bottom: 5px;
     margin-top: 5px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 14px 25px;
+    margin-right: -125px;
 }
+
 .border {
-    border: 1px solid #FFF!important;
+    border: 1px solid #FFF !important;
     border-radius: 50%;
     margin: 10px;
 }
-.row {
-    margin-right: 60px;
-}
+
+/*.row {*/
+/*    margin-right: 60px;*/
+/*}*/
+
 .a {
     height: 100px;
 
 }
+
 .r1 {
     margin-top: 40px;
     margin-right: 0px;
 }
+
 .po {
     position: absolute;
-    left: 150px;
-    top: 40px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+.po > div {
+    float: left;
+}
+
+.po > div:first-child {
+    margin-right: 40px;
+}
+
 .pos {
-    position: absolute;
-    left: 260px;
-    top: 10px;
+    position: relative;
+    margin: 25px auto;
 }
+
+.pos i {
+    font-size: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 7px 7px;
+}
+
+.pos i:first-child {
+    margin-right: 26px;
+}
+
+.pos i:last-child:hover {
+    color: #F1C40F;
+    background-color: #212529;
+}
+
 @font-face {
     font-family: my font;
     src: url("../font/Bkodak.ttf") format("truetype");
     src: url("../font/Bkodak.otf") format("opentype");
 }
+
 .dis {
     font-family: my font;
-    float: right;
-    padding-left: 135px;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
 }
+
+.dis p {
+    margin-bottom: 5px;
+}
+
+.dis p:last-child {
+    margin-bottom: 0;
+}
+
 .ab {
-    position: absolute;
-    top: 40px;
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    direction: rtl;
 }
+
+.ab > .dis:first-child {
+    width: 55%;
+}
+
+.ab > .dis:nth-child(2) {
+    width: 25%;
+}
+
+.ab > .dis:last-child {
+    width: 20%;
+}
+
 .under1 {
     font-family: sans-serif;
     color: #889298;
     font-size: small;
     padding-left: 77px;
 }
+
 .under2 {
     font-family: sans-serif;
     color: #889298;
     font-size: small;
     padding-left: 34px;
 }
-div.col-9:hover {
+
+div.gray-card:hover {
     background-color: #F1C40F;
     transition: 0.7s;
 }
+
 .multi {
     float: left;
     font-size: large;
 }
+
 svg.bi-x {
     font-size: xx-large;
     border-radius: 50%;
 }
+
 svg.bi-x:hover {
     background-color: #000;
     color: #F1C40F;
     transition: 0.7s;
 }
+
 div.default {
     border: #4B4340;
     background-color: #4B4340;
     position: absolute;
-    height: 657px;
-    top: 0px;
+    height: 100%;
+    top: 0;
     left: -400px;
     transition: 0.7s;
     width: 400px;
 }
+
 .show {
-    left: 0px!important;
+    left: 0px !important;
 }
+
 #remove {
     color: #F1C40F;
 }
+
 .r0 {
     margin-bottom: 55px;
 }
-div.col-9:hover {
-    cursor:pointer;
+
+div.gray-card:hover {
+    cursor: pointer;
 }
+
 svg.bi-x:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
+
 i.fa-exchange-alt:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
-h1.fh  {
+
+h1.fh {
     font-family: "my font";
     font-size: x-large;
-    color:#F1C40F;
+    color: #F1C40F;
 }
+
 div.default1 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 105px;
 }
+
 div.xdefault {
     position: absolute;
     left: 357px;
     top: 40px;
 }
+
 div.dfh {
-    float:right;
+    float: right;
     margin-bottom: 40px;
 }
+
 .table thead th {
     vertical-align: bottom;
     border-bottom: none;
     border-top: none;
 }
+
 .table-sm {
     direction: rtl;
     font-family: "my font";
     color: #F1C40F;
 }
+
 .rr {
     float: right;
-    border-top:none ;
+    border-top: none;
 }
+
 .table td, .table th {
     padding: 0px;
     border-top: none;
     padding-top: 7px
 }
+
 .tr1 {
     border-top: 1px solid #655738;
 }
+
 .tr2 {
     border-top: 1px solid #F1C40F;
 }
