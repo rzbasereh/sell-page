@@ -1,13 +1,15 @@
-div.container{
+body {
     background-color: #ECF0F1;
-    height: 675px;
+}
+div.container{
+    height: 657px;
 }
 div.col-9 {
     background-color: #E5E9EA;
 }
 .product {
-    width: 50px;
-    height: 70px;
+    width: 65px;
+    height: 85px;
 }
 div.products {
     float: right;
@@ -26,14 +28,15 @@ div.products {
     margin: 10px;
 }
 .row {
-    margin-right: 0px;
+    margin-right: 60px;
 }
 .a {
     height: 100px;
+
 }
 .r1 {
-    margin-bottom: 30px;
     margin-top: 40px;
+    margin-right: 0px;
 }
 .po {
     position: absolute;
@@ -42,7 +45,7 @@ div.products {
 }
 .pos {
     position: absolute;
-    left: 250px;
+    left: 260px;
     top: 10px;
 }
 @font-face {
@@ -84,7 +87,6 @@ svg.bi-x {
     border-radius: 50%;
 }
 svg.bi-x:hover {
-    border: 1px solid #000;
     background-color: #000;
     color: #F1C40F;
     transition: 0.7s;
@@ -93,14 +95,71 @@ div.default {
     border: #4B4340;
     background-color: #4B4340;
     position: absolute;
-    height: 675px;
+    height: 657px;
     top: 0px;
-    left: -100px;
+    left: -400px;
     transition: 0.7s;
+    width: 400px;
 }
 .show {
-    left: 100px!important;
+    left: 0px!important;
 }
 #remove {
     color: #F1C40F;
+}
+.r0 {
+    margin-bottom: 55px;
+}
+div.col-9:hover {
+    cursor:pointer;
+}
+svg.bi-x:hover {
+    cursor:pointer;
+}
+i.fa-exchange-alt:hover {
+    cursor:pointer;
+}
+h1.fh  {
+    font-family: "my font";
+    font-size: x-large;
+    color:#F1C40F;
+}
+div.default1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 105px;
+}
+div.xdefault {
+    position: absolute;
+    left: 357px;
+    top: 40px;
+}
+div.dfh {
+    float:right;
+    margin-bottom: 40px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    border-top: none;
+}
+.table-sm {
+    direction: rtl;
+    font-family: "my font";
+    color: #F1C40F;
+}
+.rr {
+    float: right;
+    border-top:none ;
+}
+.table td, .table th {
+    padding: 0px;
+    border-top: none;
+    padding-top: 7px
+}
+.tr1 {
+    border-top: 1px solid #655738;
+}
+.tr2 {
+    border-top: 1px solid #F1C40F;
 }
