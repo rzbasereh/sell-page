@@ -11,4 +11,9 @@ $(document).ready(function () {
     $(".btn.dropdown-toggle").click(function () {
         $(".dropdown-menu").toggleClass("show");
     });
+    $(".bi-plus").click(function () {
+        let a=$(this).closest("td").find("p").text();
+        $(this).closest("td").find("p").html(parseInt(a)+1);
+        console.log(c);
+    })
 });
