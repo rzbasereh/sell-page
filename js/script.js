@@ -16,7 +16,16 @@ $(document).ready(function () {
         $(".bi-plus").click(function () {
             let a = $(this).closest("td").find("p").text();
             $(this).closest("td").find("p").html(parseInt(a) + 1);
-        })
+        });
+        $(".bi-dash").click(function () {
+        if ($(this).closest("td").find("p").text() > 1){
+            let minus = $(this).closest("td").find("p").text();
+            $(this).closest("td").find("p").html(parseInt(minus) - 1);
+        }
+        else {
+            $(this).closest("tr").remove();
+        }
+        });
     };
     buy_option();
     $(".bi-tag").click(function () {
@@ -24,7 +33,9 @@ $(document).ready(function () {
         let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
 
         if ($("td:contains(" + product_name + ")").length > 0) {
-
+        let add = $("td:contains(" + product_name + ")").closest("tr").find(".plus p").text();
+            $("td:contains(" + product_name + ")").closest("tr").find(".plus p").html(parseInt(add) + 1);
+            console.log(add);
         } else {
             let new_row = "<tr>\n" +
                 "                                    <td>\n" +
