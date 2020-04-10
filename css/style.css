@@ -81,9 +81,11 @@ div.products {
     padding: 7px 7px;
     float: left;
 }
+
 .pos > div {
     margin-right: 20px;
 }
+
 .pos > .fa-exchange-alt:hover {
     background-color: black;
     color: #F1C40F;
@@ -253,19 +255,22 @@ div.dfh {
 .tr2 {
     border-top: 1px solid #F1C40F;
 }
+
 .dropdown-menu {
     width: 620px;
     height: 300px;
     padding: 20px 40px;
     background-color: #4B4340;
 }
-div.dropdown-menu>.table {
+
+div.dropdown-menu > .table {
     text-align: right;
     display: table-cell;
     vertical-align: middle;
     float: right;
     color: #F1C40F;
 }
+
 thead.cart-plus {
     width: 100%;
     direction: rtl;
@@ -275,6 +280,7 @@ thead.cart-plus {
     font-family: "my font";
     font-size: large;
 }
+
 tbody.cart-plus {
     width: 100%;
     direction: rtl;
@@ -282,80 +288,97 @@ tbody.cart-plus {
     display: table;
 
 }
+
 .dropdown-menu > h1 {
     font-family: "my font";
     color: #F1C40F;
     font-size: x-large;
     float: right;
 }
-tbody.cart-plus >tr {
+
+tbody.cart-plus > tr {
     border-top: 1px solid #F1C40F;
     font-family: "my font";
     font-size: small;
 }
+
 p > span {
     font-family: sans-serif;
 }
+
 td.plus {
     display: inline-flex;
 }
+
 thead.cart-plus > tr > th:nth-child(2) {
     position: absolute;
     right: 225px;
     padding-bottom: 0px;
 }
+
 thead.cart-plus > tr > th:last-child {
     position: relative;
     right: 200px;
     padding-bottom: 0px;
 }
+
 thead.cart-plus > tr > th:first-child {
     position: relative;
     right: 35px;
     padding-bottom: 0px;
 }
+
 tbody.cart-plus > tr > td > p {
     margin-bottom: 0px;
     position: relative;
     display: inline-flex;
 }
+
 tbody.cart-plus > tr > td:first-child {
     display: inline-flex;
 }
+
 svg.bi-plus {
     position: relative;
     left: 15px;
     font-size: large;
     border-radius: 50%;
 }
+
 svg.bi-dash {
     position: relative;
     right: 15px;
     font-size: large;
     border-radius: 50%;
 }
+
 tbody.cart-plus > tr > td:nth-child(2) {
     padding-left: 75px;
 }
+
 tbody.cart-plus > tr > td {
     padding-bottom: 7px;
 }
+
 td.plus > p {
     border: 1px solid;
     padding-left: 8px;
     padding-right: 8px;
     box-shadow: -1px -1px;
 }
+
 svg.bi-dash:hover {
     color: #4B4340;
-    background-color:#F1C40F ;
+    background-color: #F1C40F;
     cursor: pointer;
 }
+
 svg.bi-plus:hover {
     color: #4B4340;
-    background-color:#F1C40F ;
+    background-color: #F1C40F;
     cursor: pointer;
 }
+
 .dropdown-menu > div {
     border: 1px solid #F1C40F;
     font-family: "my font";
@@ -367,6 +390,7 @@ svg.bi-plus:hover {
     top: 242px;
     left: 343px;
 }
+
 .dropdown-menu > div > p:first-child {
     margin-bottom: 0;
     float: right;
@@ -375,6 +399,7 @@ svg.bi-plus:hover {
     direction: rtl;
     top: 5px;
 }
+
 .dropdown-menu > div > p:nth-child(2) {
     margin-bottom: 0;
     float: right;
@@ -383,6 +408,7 @@ svg.bi-plus:hover {
     direction: rtl;
     top: 5px;
 }
+
 .dropdown-menu > div > p:last-child {
     margin-bottom: 0;
     float: right;
@@ -391,6 +417,7 @@ svg.bi-plus:hover {
     direction: rtl;
     top: 5px;
 }
+
 .dropdown-menu > button:last-child {
     background-color: #F1C40F;
     color: #4B4340;
@@ -401,6 +428,7 @@ svg.bi-plus:hover {
     width: 100px;
     border: 1px #F1C40F;
 }
+
 .dropdown-toggle {
     width: 25px;
     position: absolute;
@@ -410,46 +438,58 @@ svg.bi-plus:hover {
     border-color: #ECF0F1;
     top: 7px;
 }
+
 .btn-secondary:hover {
     background-color: #ECF0F1;
     border-color: #ECF0F1;
 }
+
 .dropdown-toggle > i {
     position: absolute;
     left: -6px;
     bottom: -6px;
     color: black;
 }
+
 .dropdown-toggle > i:hover {
     color: #F1C40F;
 }
-.dropdown-toggle > i:focus {
+
+.dropdown-toggle:focus > i {
     color: #F1C40F;
 }
-.show>.btn-secondary.dropdown-toggle:focus {
+
+.show > .btn-secondary.dropdown-toggle:focus {
     box-shadow: none;
 }
-.show>.btn-secondary.dropdown-toggle {
+
+.show > .btn-secondary.dropdown-toggle {
     color: #F1C40F;
     background-color: #4B4340;
     border-color: #4B4340;
 }
+
 .btn:focus {
     box-shadow: none;
 }
+
 .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
+    display: none;
+}
+
+.dropdown-menu:after {
     content: "";
-    border-right: 8px solid transparent;
-    border-bottom: 7px solid;
-    border-left: 8px solid transparent;
+    position: absolute;
+    top: -22px;
+    left: 43px;
+    border: 8px solid transparent;
+    border-bottom-color: #4B4340;
     transform: translate(-13px, 6px);
 }
+
 .dropdown-menu.show {
-    will-change: transform;
-    position: absolute;
-    transform: translate3d(50px, 30px, 0px);
-    top: 0px;
+    will-change: transform !important;
+    position: absolute !important;
+    transform: translate3d(50px, 30px, 0px) !important;
+    top: 5px !important;
 }
