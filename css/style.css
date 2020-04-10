@@ -156,15 +156,21 @@ div.gray-card:hover {
     font-size: large;
 }
 
-svg.bi-x {
+svg.bi-x, svg.bi-tag {
     font-size: xx-large;
     border-radius: 50%;
 }
 
-svg.bi-x:hover {
+svg.bi-tag {
+    padding: 6px;
+    overflow: initial;
+}
+
+svg.bi-x:hover, svg.bi-tag:hover {
     background-color: #000;
     color: #F1C40F;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 div.default {
@@ -452,6 +458,7 @@ svg.bi-plus:hover {
 }
 
 .dropdown-toggle > i:hover {
+    background-color: black;
     color: #F1C40F;
 }
 
