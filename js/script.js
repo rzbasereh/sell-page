@@ -20,7 +20,11 @@ $(document).ready(function () {
     $(".bi-tag").click(function () {
         let product_name = $(this).closest(".row.a.r1").find(".ab .dis:first-child p:first-child").text();
             let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
-        if (false){
+        var tableRow = $("td").filter(function() {
+            return $(this).text() === product_name;
+        }).closest("tr");
+        console.log(tableRow);
+            if (true){
 
         }
         else{
