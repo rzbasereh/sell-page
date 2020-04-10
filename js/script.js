@@ -8,4 +8,7 @@ $(document).ready(function () {
     $("svg.bi-x").click(function () {
         $(this).closest("div.r1").remove()
     });
+    $(".btn.dropdown-toggle").click(function () {
+        $(".dropdown-menu").toggleClass("show");
+    });
 });
