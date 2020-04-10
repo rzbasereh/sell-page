@@ -11,23 +11,21 @@ $(document).ready(function () {
     $(".btn.dropdown-toggle").click(function () {
         $(".dropdown-menu").toggleClass("show");
     });
+
     function buy_option() {
-    $(".bi-plus").click(function () {
-        let a = $(this).closest("td").find("p").text();
-        $(this).closest("td").find("p").html(parseInt(a)+1);
-    })};
+        $(".bi-plus").click(function () {
+            let a = $(this).closest("td").find("p").text();
+            $(this).closest("td").find("p").html(parseInt(a) + 1);
+        })
+    };
     buy_option();
     $(".bi-tag").click(function () {
         let product_name = $(this).closest(".row.a.r1").find(".ab .dis:first-child p:first-child").text();
-            let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
-        var tableRow = $("td").filter(function() {
-            return $(this).text() === product_name;
-        }).closest("tr");
-        console.log(tableRow);
-            if (true){
+        let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
 
-        }
-        else{
+        if ($("td:contains(" + product_name + ")").length > 0) {
+
+        } else {
             let new_row = "<tr>\n" +
                 "                                    <td>\n" +
                 "                                        <p>\n" +
