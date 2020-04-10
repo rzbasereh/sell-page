@@ -12,22 +12,7 @@ $(document).ready(function () {
         $(".dropdown-menu").toggleClass("show");
     });
 
-    function buy_option() {
-        $(".bi-plus").click(function () {
-            let a = $(this).closest("td").find("p").text();
-            $(this).closest("td").find("p").html(parseInt(a) + 1);
-        });
-        $(".bi-dash").click(function () {
-        if ($(this).closest("td").find("p").text() > 1){
-            let minus = $(this).closest("td").find("p").text();
-            $(this).closest("td").find("p").html(parseInt(minus) - 1);
-        }
-        else {
-            $(this).closest("tr").remove();
-        }
-        });
-    };
-    buy_option();
+
     $(".bi-tag").click(function () {
         let product_name = $(this).closest(".row.a.r1").find(".ab .dis:first-child p:first-child").text();
         let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
@@ -64,7 +49,19 @@ $(document).ready(function () {
                 "                                </tr>";
 
             $(".dropdown-menu tbody").append(new_row);
-            buy_option();
+            $(".dropdown-menu .table tbody .plus .bi-plus").click(function () {
+                let plus = $(this).closest("td").find("p").text();
+                $(this).closest("td").find("p").html(parseInt(plus) + 1);
+            });
+            $(".dropdown-menu .table tbody .plus .bi-dash").click(function () {
+                if ($(this).closest("td").find("p").text() > 1){
+                    let minus = $(this).closest("td").find("p").text();
+                    $(this).closest("td").find("p").html(parseInt(minus) - 1);
+                }
+                else {
+                    $(this).closest("tr").remove();
+                }
+            });
         }
 
     })
