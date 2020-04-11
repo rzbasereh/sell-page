@@ -1,0 +1,1 @@
+-javaagent:C:\jetbrains-agent.jar
