@@ -18,7 +18,7 @@ $(document).ready(function () {
         let product_cost = $(this).closest(".row.a.r1").find(".ab .dis:last-child span:first-child").text();
 
         if ($("td:contains(" + product_name + ")").length > 0) {
-        let add = $("td:contains(" + product_name + ")").closest("tr").find(".plus p").text();
+            let add = $("td:contains(" + product_name + ")").closest("tr").find(".plus p").text();
             $("td:contains(" + product_name + ")").closest("tr").find(".plus p").html(parseInt(add) + 1);
             console.log(add);
         } else {
@@ -54,11 +54,10 @@ $(document).ready(function () {
                 $(this).closest("td").find("p").html(parseInt(plus) + 1);
             });
             $(".dropdown-menu .table tbody .plus .bi-dash").click(function () {
-                if ($(this).closest("td").find("p").text() > 1){
+                if ($(this).closest("td").find("p").text() > 1) {
                     let minus = $(this).closest("td").find("p").text();
                     $(this).closest("td").find("p").html(parseInt(minus) - 1);
-                }
-                else {
+                } else {
                     $(this).closest("tr").remove();
                 }
             });
